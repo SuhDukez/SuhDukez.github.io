@@ -1,0 +1,103 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #323232; /* Dark Gray background */
+    color: #f0f0f0; /* Light Gray text for readability */
+}
+
+/* Header */
+header {
+    background-color: #841617; /* Crimson */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+    /* Navigation Links */
+    header nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+    }
+
+        header nav a:hover {
+            color: #bcdceb; /* Sky accent for hover */
+        }
+
+/* Main Content */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Section Headers */
+section h2 {
+    color: #841617; /* Crimson for headers */
+    border-bottom: 2px solid #4e0002; /* Dark Crimson underline */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+    ul li {
+        margin-bottom: 0.5rem;
+    }
+
+/* Footer */
+footer {
+    background-color: #4e0002; /* Dark Crimson */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+    /* Links in Footer */
+    footer a {
+        color: #bcdceb; /* Sky accent */
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+/* Buttons */
+button {
+    background-color: #841617; /* Crimson */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    button:hover {
+        background-color: #bcdceb; /* Sky on hover */
+        color: #323232; /* Dark Gray text */
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
